@@ -1,0 +1,8 @@
+{
+    "git.allowForcePush": false,
+    "git.allowNoVerifyCommit": false,
+    "git.alwaysSignOff": false,
+    "git.alwaysShowStagedChangesResourceGroup": false,
+    "git.autoStash": false,
+    "git.autorefresh": false
+}
