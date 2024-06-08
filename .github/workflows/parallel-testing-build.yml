@@ -13,6 +13,11 @@ jobs:
         with:
             command: npm run test:runOnlyaddToCart
             browser: chrome
+      - name: Cypress firfox 2 tc reports
+        uses: actions/upload-artifact@v4
+        with:
+                name: Mochawesome HTML addToCart Report
+                path: cypress/reports/html            
   Register-run:
     runs-on: ubuntu-22.04
     steps:
@@ -24,6 +29,11 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
             command: npm run test:registerTest
+      - name: Cypress firfox 2 tc reports
+        uses: actions/upload-artifact@v4
+        with:
+            name: Mochawesome HTML registerTest Report
+            path: cypress/reports/html          
                     
             
 
