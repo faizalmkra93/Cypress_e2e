@@ -1,4 +1,4 @@
-name: Sanitybuild using script tests
+name: single using script tests
 on: push
 jobs:
   cypress-run:
@@ -11,4 +11,4 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-            command: npm run runOnlyaddToCart
+            command: npm run test:runOnlyaddToCart
