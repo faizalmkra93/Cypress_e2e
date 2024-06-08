@@ -10,3 +10,19 @@ jobs:
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v6
+      
+      - name: Cypress firfox 2 tc reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+            name: Mochawesome HTML Report
+            path: cypress/reports/html    
+
+      - name: Slack Notification FAIMKRA
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
+          SLACK_ICON: https://github.com/rtCamp.png?size=48
+          SLACK_MESSAGE: ' Test Automation report https://github.com/faizalmkra93/Cypress_e2e/actions/runs/${{github.run_id}}'
+          SLACK_TITLE: Cypress Web Test
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
