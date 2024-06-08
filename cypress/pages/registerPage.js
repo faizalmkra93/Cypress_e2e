@@ -3,7 +3,7 @@ export class registerPage {
 
     weblocators = {
 
-        firstName: '#input-firstname',
+        firstName: '#input-firstname4',
         lastName: '#input-lastname',
         email: '#input-email',
         telephone: '#input-telephone',
@@ -25,15 +25,15 @@ export class registerPage {
     }
     enterlastName(LName) {
 
-        cy.get(this.weblocators.lastName).type(LName,{delay:1000})
+        cy.get(this.weblocators.lastName).type(LName)
     }
     enterEmail(email) {
 
-        cy.get(this.weblocators.email).type(email,{delay:1000})
+        cy.get(this.weblocators.email).type(email)
     }
     enterTelephone(phoneNo) {
 
-        cy.get(this.weblocators.telephone).type(phoneNo,{delay:1000})
+        cy.get(this.weblocators.telephone).type(phoneNo)
     }
     enterPassword(password) {
 
