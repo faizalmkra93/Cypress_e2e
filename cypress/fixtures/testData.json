@@ -7,6 +7,6 @@
         "prductName":"MacBook"
     },
     "message":{
-        "successMessage": "123Success: You have added MacBook to your shopping cart!"
+        "successMessage": "Success: You have added MacBook to your shopping cart!"
     }
 }
