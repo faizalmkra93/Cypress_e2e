@@ -21,19 +21,19 @@ export class registerPage {
     }
     enterFirstName(FName) {
 
-        cy.get(this.weblocators.firstName).type(FName)
+        cy.get(this.weblocators.firstName).type(FName,{delay:1000})
     }
     enterlastName(LName) {
 
-        cy.get(this.weblocators.lastName).type(LName)
+        cy.get(this.weblocators.lastName).type(LName,{delay:1000})
     }
     enterEmail(email) {
 
-        cy.get(this.weblocators.email).type(email)
+        cy.get(this.weblocators.email).type(email,{delay:1000})
     }
     enterTelephone(phoneNo) {
 
-        cy.get(this.weblocators.telephone).type(phoneNo)
+        cy.get(this.weblocators.telephone).type(phoneNo,{delay:1000})
     }
     enterPassword(password) {
 
